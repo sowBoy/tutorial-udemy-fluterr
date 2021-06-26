@@ -18,6 +18,10 @@ class WebBar extends PreferredSize {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Branding(),
+          Expanded(child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: menuButtonHover(),
+          )),
           HoverButton(button: ButtonObject(text: "Log in", destination: NextPage()))
         ],
       ),
