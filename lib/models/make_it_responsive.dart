@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class MakeItResponsive {
 
@@ -17,4 +17,4 @@ class MakeItResponsive {
   }
 }
 
-enum ScreenSize { small, medium, large}
+enum ScreenSize { small, medium, large }

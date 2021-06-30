@@ -44,4 +44,7 @@ List<FloatingActionButton> getFloating() => containerButton.map((btn) => Floatin
   onPressed: null,
   child: btn.icon,
   backgroundColor: pinkColor,
+  heroTag: btn.text,
 )).toList();
+
+List<HoverButton> getCardHoverButton() => containerButton.map((e) => HoverButton(button: e)).toList();
