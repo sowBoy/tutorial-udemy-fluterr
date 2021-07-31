@@ -1,22 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:la_cuisine_dathena/constants.dart';
+import 'package:la_cuisine_dathena/widgets/title_text.dart';
 
 class Branding extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(
-            "La cuisine d'Athena",
-            style: TextStyle(
-              color: Colors.red,
-              fontWeight: FontWeight.w900,
-              fontSize: 20,
-              fontStyle: FontStyle.italic
-            ),
-        ),
-        Image.asset(cupcakeLogo, height: 40, width: 40,)
+        TitleText(string: "La cuisine d'Athena"),
+        Image.asset(
+          cupcakeLogo,
+          height: 40,
+          width: 40,
+        )
       ],
     );
   }
