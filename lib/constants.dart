@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:la_cuisine_dathena/models/button_object.dart';
+import 'package:la_cuisine_dathena/models/url_class.dart';
 import 'package:la_cuisine_dathena/pages/next_page.dart';
 import 'package:la_cuisine_dathena/widgets/hover_button.dart';
+import 'package:la_cuisine_dathena/widgets/url_button.dart';
 
 String birthdayImage = "images/bday.jpg";
 String brownieImage = "images/brownie.jpg";
@@ -48,3 +50,11 @@ List<FloatingActionButton> getFloating() => containerButton.map((btn) => Floatin
 )).toList();
 
 List<HoverButton> getCardHoverButton() => containerButton.map((e) => HoverButton(button: e)).toList();
+
+List<UrlClass> networks  = [
+  UrlClass(name: "Facebook", url: "https://www.facebook.com"),
+  UrlClass(name: "Instagram", url: "https://www.instagram.com"),
+  UrlClass(name: "Twitter", url: "https://www.twitter.com"),
+];
+
+List<UrlButton> getSocialButtons() => networks.map((e) => UrlButton(urlClass: e,)).toList();

@@ -18,9 +18,7 @@ class ContactSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
-                children: [
-                    Text("Social")
-                ],
+                children: social(),
               ),
               Column(
                 children: [
@@ -34,5 +32,11 @@ class ContactSection extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  List<Widget> social() {
+    List<Widget> items = [Text("Social")];
+    items.addAll(getSocialButtons());
+    return items;
   }
 }

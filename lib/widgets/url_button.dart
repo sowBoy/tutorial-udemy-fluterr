@@ -4,7 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 class UrlButton extends StatelessWidget {
 
-  UrlClass urlClass;
+  final UrlClass urlClass;
 
   UrlButton({required this.urlClass});
 
